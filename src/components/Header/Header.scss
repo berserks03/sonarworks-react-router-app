@@ -1,0 +1,42 @@
+.navigation {
+  background-color: black;
+  display: flex;
+  height: 6rem;
+
+  & div:not(:first-child) {
+    border-left: 1px solid #313335;
+  }
+
+  & a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: #96989c;
+    }
+  }
+
+  & .sonarworks {
+    width: 192px;
+    flex-grow: 0;
+    padding: 16px;
+
+    & a {
+      font-weight: 600;
+    }
+  }
+
+  & .legalCentre {
+    flex-grow: 1;
+    padding: 16px;
+  }
+
+  & .logo {
+    width: 96px;
+    flex-grow: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
